@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        fieldset {
+            width: 400px;
+        }
+
+        legend {
+            font-size: 20px;
+            color: blueviolet;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="./index.html"><h3>Home</h3></a>
+    <form action="https://banoqabil.pk/" method="post">
+        <h1>User Registration Form</h1>
+        <fieldset class="center">
+            <legend><b>Personal Information</b></legend><br>
+            <label
+                for="username"><b>UserName:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="username" required="required" /></title><br /><br />
+            <label for="emailAddress"><b>Email Address:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="emailAddress" required="required" /><br /><br />
+            <label
+                for="password"><b>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" name="password" required="required" /><br><br>
+            <label
+                for="confirmPassword"><b>Confirm<br>Password:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" name="confirmPassword" required="required" /><br><br>
+            <p> <b>Gender:</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input id="male" type="radio" name="gender" value="m" required="required" />
+                <label for="male">Male</label>
+                <input id="female" type="radio" name="gender" value="f" required="required" />
+                <label for="female">Female</label>
+            </p>
+        </fieldset><br><br>
+        <!-- fieldset#02 -->
+        <fieldset class="center">
+            <legend><b>Address Details</b></legend><br>
+            <label for="address1"><b>Address line
+                    one:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="address1" required="required" /></title><br /><br />
+            <label for="address2"><b>Address line
+                    two:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="address2" required="required" /></title><br /><br />
+            <label
+                for="city"><b>City:</b></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <select name="city" id="city">
+                <option value="">Select City</option>
+                <option value="karachi">Karachi</option>
+                <option value="lahore">Lahore</option>
+                <option value="islamabad">Islamabad</option>
+                <option value="peshawar">Peshawar</option>
+            </select>
+        </fieldset><br><br>
+        <div style="text-align:center;">
+            <input type="submit" value="Submit" style="font-size: x-large; color: purple;" />
+        </div>
+    </form>
+
+</body>
+
+</html>
